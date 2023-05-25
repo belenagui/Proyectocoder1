@@ -18,7 +18,7 @@
   }
   
   .logo{
-    height: 40px;
+    height: 50px;
   }
   
   nav ul{
@@ -105,6 +105,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  padding: 0;
 }
 
 nav a {
@@ -133,12 +134,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1440;
-  height: 362;
+  width: 1440px;
+  height: 362px;
   overflow: hidden;
-  position: relative box-shadow: 5px 8px 12px black;
+  position: relative;
+  box-shadow: 5px 8px 12px black;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .circle1 {
@@ -151,7 +153,8 @@ header {
   text-align: center;
   vertical-align: middle;
   overflow: hidden;
-  margin: 1fr cursor: pointer;
+  margin: 1fr;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
@@ -164,8 +167,9 @@ header {
   color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 50%;
-  left: 50% transform: translate(-50%, -50%);
-  font size: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 
 
@@ -241,10 +245,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1440;
-  height: 362;
+  width: 1440px;
+  height: 362px;
   overflow: hidden;
-  position: relative box-shadow: 5px 8px 12px black;
+  position: relative;
+  box-shadow: 5px 8px 12px black;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -272,8 +277,9 @@ header {
   color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 50%;
-  left: 50% transform: translate(-50%, -50%);
-  font size: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 
 
@@ -449,6 +455,22 @@ header {
 }
 
 /* contacto */
+
+.contenedor-galeria{
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin:0;
+  padding: 0;
+  position: relative;
+}
+.imagencontacto{
+  width: 100%;
+  background-position: center;
+  background-repeat: cover;
+  margin: 0%;
+  object-fit: cover;
+}
 
 .container {
   max-width: 1170px;
