@@ -5,17 +5,23 @@
   list-style: none;
   box-sizing: border-box;
   }
+
   html{
     height: 100%;
   }
-
+  body {
+    font-family: sans-serif;
+    margin: 0%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0%;
+  }
   nav{
     background: black;
     height: 80px;
     width: 100%;
   }
 
-  .imglog{
+  .enlace{
     position: absolute;
     padding: 20px 50px;
   }
@@ -44,7 +50,7 @@
     background: #00c3ff;
     transition: 0.5s;
   }
-  .check1{
+  .checkbtn{
     font-size: 30px;
     color: white;
     float: right;
@@ -58,30 +64,23 @@
     display: none;
   }
 
-  body {
-    font-family: sans-serif;
-    margin: 0%;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 0%;
-  }
-
-  section{
-    background: url(observandoAlumnos.jpg);
+  .galeria{
+    background: url(../Imagenes/observandoAlumnos.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     height: calc(100vh- 80px);
   }
 
-  @media (max-width: 1024px){
-    .imglog{
+  @media (max-width: 1200px){
+    .enlace{
       padding-left: 20px;
     }
     nav ul li a{
       font-size: 16px;
     }
   }
-  @media (max-width:400px){
-    .check1{
+  @media (max-width:320px){
+    .checkbtn{
       display: block;
     }
     ul{
@@ -110,19 +109,6 @@
       left: 0;
     }
   }
-
-
-nav a {
-  text-decoration: none;
-  font-weight: 600px;
-  padding-right: 130px;
-  align-items: center;
-  color: rgba(255, 255, 255, 1)
-}
-
-nav a :hover {
-  color: rgba(0, 0, 0, 0.2);
-}
 
 header {
   background-color: rgba(14, 14, 14, 1);
