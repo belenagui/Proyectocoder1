@@ -334,6 +334,7 @@ header {
   margin: 0 auto;
 }
 
+/* footer */
 .footer {
   background-color: black;
   padding: 80px 80px;
@@ -391,7 +392,7 @@ header {
   color: #00c3ff;
   padding-left: 6px;
 }
-
+/* responsive footer */
 @media(max-width: 1024px) {
   .footer-row {
     text-align: center;
@@ -562,7 +563,34 @@ ul {
   border-radius: 15px;
   box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
 }
-
+/* banner servicios */
+.galerias{
+  background: url(../Imagenes/cenardsent.JPG) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh- 80px);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.contenedor-galerias{
+  width: 100%;
+  min-width: 320px;
+  margin: auto;
+  padding: 0px;
+  position: relative;
+  object-fit: cover;
+  background-size: cover;
+  height: 500px;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+}
 
 /*card seccion servicios */
 .container__cards{
@@ -578,6 +606,8 @@ ul {
   width: 300px;
   margin: 10px;
   transition: all 300ms;
+  border-radius: 20px;
+  background-image: url(../Imagenes/bg1.png);
 }
 
 .card:hover{
@@ -593,13 +623,14 @@ ul {
 
 .card .cover img{
   width: 250px;
-  display: block;
+  display: block;/* centrando la img */
   margin: auto;
   position: relative;
   top: 40px;
   z-index: 1;
   filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
   transition: all 400ms;
+  border-radius: 20px;
 }
 
 .card:hover .cover img{
@@ -619,15 +650,15 @@ ul {
 }
 
 .card:nth-of-type(1) .img__back{
-  background-image: url(../images/bg1.jpg);
+  background-image: url(../Imagenes/bg1.png);
 }
 
 .card:nth-of-type(2) .img__back{
-  background-image: url(../images/bg2.jpg);
+  background-image: url(../Imagenes/bg1.png);
 }
 
 .card:nth-of-type(3) .img__back{
-  background-image: url(../images/bg3.jpg);
+  background-image: url(../Imagenes/bg1.png);
 }
 
 .card:hover .img__back{
@@ -635,7 +666,7 @@ ul {
 }
 
 .card .description{
-  background: white;
+  background:rgba(101, 148, 179, 0.905);
   margin-top: -10px;
   padding: 20px;
   border-radius: 0px 0px 20px 20px;
@@ -658,8 +689,8 @@ ul {
   padding: 10px 40px;
   margin-top: 20px;
   border: none;
-  background: #A6359D;
-  color: white;
+  background: #020d24;
+  color: whitesmoke;
   font-size: 14px;
   cursor: pointer;
   border-radius: 8px;
