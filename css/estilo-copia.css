@@ -338,6 +338,7 @@ header {
 .footer {
   background-color: black;
   padding: 80px 80px;
+  justify-content: center;
 }
 
 .footer-row {
@@ -349,6 +350,8 @@ header {
 .footer-links {
   width: 25%;
   padding: 0 15px;
+  display: inline-block;
+  text-align: center;
 }
 
 .footer-links h2 {
@@ -525,7 +528,7 @@ ul {
 /* LARGE SIZE */
 @media(min-width: 700px) {
   body {
-      padding: 0 4em;
+      padding: 0;
   }
   .contact-wrapper {
       display: grid;
