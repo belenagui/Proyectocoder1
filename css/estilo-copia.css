@@ -609,7 +609,6 @@ ul {
 }
 .card1__second-section{
   display: flex;
-  flex-wrap: wrap;
 }
 .card1__second-section__product-type{
   color: hsl(228, 12%, 48%);
@@ -660,7 +659,7 @@ ul {
   background-color: #83277b;
 }
 /* responsive para desktop */
-@media(min-width:700px){
+@media (min-width:700px){
   .card1{
       width: 600px;
       height: 450px;
