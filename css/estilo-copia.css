@@ -24,7 +24,7 @@
     width: 100%;
   }
   nav>.offcanvas{
-   background-color: black;
+  background-color: black;
   }
   .navbar-toggler{
     border: none;
@@ -156,36 +156,129 @@ header {
   width: 100%;
   height: 100%;
 }
-
-.contenedor2 {
-  width: 100%;
-  height: 432px;
-  background-image: url(./Imagenes/Belu-nacional\ santa\ fe-1641.JPG);
+/* sobre mi */
+.contenedor-about{
+  padding: 0;
+  display: flex;
+  background-image: url(../Imagenes/training-828715.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
   overflow: hidden;
-  display: grid;
+}
+.about-txt{
+  width: 30%;
+  height: 100%;
+  background-image: url(../Imagenes/bg1.png);
+  box-sizing: border-box;
+  padding: 30px;
+  margin-left: 998px;
+  float: right;
+
 }
 
-.div>.imagenFondo {
-  background-image: url(./Imagenes/Belu-nacional\ santa\ fe-1641.JPG);
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
+.h2about{
+  font-size: 70px;
+  color: black;
+  margin-bottom: 15px;
+}
+.about-txt p{
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 35px;
+}
+/* responsive sobre mi */
+@media(max-width:1334px){
+  .contenedor-about{
+    padding: 0 30px 30px 30px;
+    flex-direction: column;
+  }
+  .about-txt{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    order: 2;
+  }
+}
+/* fin responsive sobre mi */
+
+/* boton */
+.contenedor5 {
   width: 100%;
-  height: 100%;
+  height: 300px;
+  background-image: url(../Imagenes/bg1.png);
+  justify-content: center;
+  align-items: center;
+  display: flex;
   position: relative;
 }
 
-.caja1 {
-  width: 600px;
-  height: 500px;
-  background-color: rgba(255, 255, 255, 1);
-  position: absolute;
-  left: 600px;
-  top: 1250px;
+.contenedor5 button{
+  height: 30%;
+  padding: 15px 20px;
+  margin: 10px;
+  border: none;
+  background: #020d24;
+  color: whitesmoke;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 300ms;
+  text-transform: uppercase;
+  font-weight: 500px;
 }
+.contenedor5 button:hover{
+  background: #010309;
+}
+/* fin boton */
 
+/* seccion para vos */
+.contenedor-foryou{
+  padding: 0;
+  display: flex;
+  background-image: url(../Imagenes/prensa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  overflow: hidden;
+  border:#000;
+  box-shadow: #000;
+}
+.foryou-txt{
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-right: 1000px;
+  float: right;
+}
+.h2foryou{
+  font-size: 70px;
+  color: white;
+  margin-bottom: 15px;
+}
+.foryou-txt p{
+  font-size: 16px;
+  color: whitesmoke;
+  margin-bottom: 35px;
+}
+/* fin seccion para vos */
+/* responsive para vos */
+@media(max-width:1334px){
+  .contenedor-about{
+    padding: 0 30px 30px 30px;
+    flex-direction: column;
+  }
+  .about-txt{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    order: 2;
+  }
+}
+/* fin responsive para vos */
+
+/* Seccion circulos 2 */
 .contenedor3 {
   display: flex;
   justify-content: center;
@@ -197,6 +290,10 @@ header {
   box-shadow: 5px 8px 12px black;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  background-color: black;
+  border-bottom: #00c3ffbf;
+  border-style: groove;
+  border-width: 2px;
 }
 .circle4 {
   display: inline-block;
@@ -296,41 +393,11 @@ header {
   top: 2250px;
 }
 
-.contenedor5 {
-  width: 100%;
-  height: 262px;
-  background-color: rgba(0, 0, 0, 0.2);
-  justify-content: center;
-  justify-items: center;
-  display: flex;
-  position: relative;
-}
-
-.contenedor5>.boton {
-  background-color: black;
-  width: 289px;
-  height: 72px;
-  border-radius: 20px;
-  justify-items: center;
-  position: absolute;
-  margin-top: 25%;
-  margin-bottom: 25%;
-}
-
-.contenedor5>.h2 {
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  font-size: medium;
-  font-family: inter;
-  top: 50%;
-  left: 50%;
-}
-
 .contenedor6 {
   max-width: 1024px;
   margin: 0 auto;
 }
-
+/* fin seccion circulos 2 */
 /* footer */
 .footer {
   background-color: black;
