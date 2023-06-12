@@ -948,7 +948,7 @@ ul {
 /* inicio de celular */
 /* Estilos del celular */
 .contenedorphone{
-  background-image: url(../Imagenes/bg1.png);
+  background-image: url(../Imagenes/dumbbell-1966704.jpg);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -1014,6 +1014,19 @@ ul {
 /* fin del celular */
 
 /* inicio seccion de opiniones */
+.opiniones{
+  background-color: #62a7e8a0;
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-size: cover;
+  padding: 0;
+  background-position: center center;
+}
 .opiniones .caja-opiniones{
   display: flex;
   align-items: center;
