@@ -912,3 +912,161 @@ ul {
   background: #83277b;
 }
 /* Fin de card de servicios */
+/* fin seccion de servicos */
+
+/* seccion de comunidad */
+/* inicio banner */
+.galeriasc{
+  background: url(../Imagenes/sentadillaNacional.JPG) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh- 80px);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.contenedor-galeriasc{
+  width: 100%;
+  min-width: 320px;
+  margin: auto;
+  padding: 0px;
+  position: relative;
+  object-fit: cover;
+  background-size: cover;
+  height: 500px;
+}
+.overlayc{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+}
+/* fin banner */
+
+/* inicio de celular */
+/* Estilos del celular */
+.contenedorphone{
+  background-image: url(../Imagenes/bg1.png);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-size: cover;
+  padding: 0;
+  background-position: center center;
+
+}
+.phone {
+  width: 300px;
+  height: 600px;
+  background-color: #121111;
+  border-radius: 20px;
+  padding: 30px;
+  margin:  70px auto 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Estilos del área del chat */
+.chat {
+  width: 100%;
+  height: 80%;
+  background-image: url(../Imagenes/bg1.png);
+  border-radius: 10px;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+/* Estilos para los mensajes del chat */
+.chat .message {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Estilos para el emisor del mensaje */
+.chat .sender {
+  background-color: #dcf8c6;
+  float: right;
+}
+
+/* Estilos para el receptor del mensaje */
+.chat .receiver {
+  background-color: #76add992;
+  float: left;
+}
+.circle-button {
+  width: 60px;
+  height: 60px;
+  background-color: #232623;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -400px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  cursor: pointer;
+}
+/* fin del celular */
+
+/* inicio seccion de opiniones */
+.opiniones .caja-opiniones{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.opiniones .caja-opiniones .caja7{
+  background-image: url(../Imagenes/bg1.png);
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  border: .1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  flex: 1 1 40rem;
+  border-radius: .5rem;
+}
+
+.opiniones .caja-opiniones .caja7 fa-solid fa-comment-exclamation{
+  position: absolute;
+  top:  1rem;
+  right: 2rem;
+  font-size: 8rem;
+  color: #4282bd;
+  opacity: .3;
+}
+
+.opiniones .caja-opiniones .caja7 .user img{
+  border-radius: 50%;
+  object-fit: cover;
+  height: 8rem;
+  width: 8rem;
+  margin-top: 2rem;
+}
+
+.opiniones .caja-opiniones .caja7 .user h3{
+  color: #16191E;
+  font-size: 2rem;
+}
+
+.opiniones .caja-opiniones .caja7 .user .stars i{
+  color: rgba(242, 242, 64, 0.776);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.opiniones .caja-opiniones .caja7 .comentarios{
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+
+
+
+/* fin seccion opiniones */
