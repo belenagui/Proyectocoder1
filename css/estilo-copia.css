@@ -1020,6 +1020,13 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.opiniones h1{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 40px auto 40px;
+}
 .opiniones .caja-opiniones .caja7{
   background-image: url(../Imagenes/bg1.png);
   margin: 1rem;
@@ -1052,6 +1059,7 @@ ul {
 .opiniones .caja-opiniones .caja7 .user h3{
   color: #16191E;
   font-size: 2rem;
+  text-align: center;
 }
 
 .opiniones .caja-opiniones .caja7 .user .stars i{
@@ -1065,8 +1073,4 @@ ul {
   font-size: 1.5rem;
   padding: 1rem;
 }
-
-
-
-
 /* fin seccion opiniones */
