@@ -53,6 +53,73 @@ nav {
     background-color: rgba(13, 138, 240, 0.722);
   }
 }
+.footer {
+  background-color: black;
+  padding: 80px 80px;
+  justify-content: center;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+  display: inline-block;
+  text-align: center;
+}
+.footer-links h2 {
+  font-size: 20px;
+  color: whitesmoke;
+  margin-bottom: 25%;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #00c3ff;
+  padding-left: 6px;
+}
+
+.social-links a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+.social-links a:hover {
+  color: #00c3ff;
+  padding-left: 6px;
+}
+
+/* responsive footer */
+@media (max-width: 1024px) {
+  .footer-row {
+    text-align: center;
+  }
+  .footer-links {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 .fotoseccion {
   background: url(../Imagenes/LevantadoraDePesas1440x562.png) no-repeat;
   background-size: cover;
