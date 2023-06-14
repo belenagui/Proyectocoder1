@@ -1,0 +1,36 @@
+header {
+    background-color: rgba(14, 14, 14, 1);
+    display: flex;
+    justify-content: space-between;
+    min-height: 93px;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+}
+
+nav {
+    background: black;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+.offcanvas {
+    background-color: black;
+}
+
+.navbar-toggler {
+    border: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+ }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav > li:hover {
+    background-color: rgba(13, 138, 240, 0.722);
+    }
+}
+

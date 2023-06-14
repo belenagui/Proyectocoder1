@@ -17,48 +17,46 @@
     min-height: 100%;
     width: 100%;
   }
+  header {
+    background-color: rgba(14, 14, 14, 1);
+    display: flex;
+    justify-content: space-between;
+    min-height: 93px;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* navbar */
 
   nav{
     background: black;
     height: 80px;
     width: 100%;
   }
-  nav>.offcanvas{
-  background-color: black;
+
+  nav,
+  .offcanvas {
+    background-color: black;
   }
-  .navbar-toggler{
+  .navbar-toggler {
     border: none;
   }
-  .navbar-toggler:focus{
+  .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
   }
-  @media(max-width:320px){
-    .navbar-nav> li:hover{
-      background-color: rgba(46, 46, 46, 1);
+
+  @media (max-width: 768px) {
+    .navbar-nav > li:hover {
+      background-color: rgba(13, 138, 240, 0.722);
     }
   }
-
-  @media (max-width: 1200px){
-    .enlace{
-      padding-left: 20px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
+/* FIN NAVBAR */
 
 
-header {
-  background-color: rgba(14, 14, 14, 1);
-  display: flex;
-  justify-content: space-between;
-  min-height: 93px;
-  width: 100%;
-  align-items: center;
-  padding: 0;
-}
-
+/* comienzo index */
+/* banner index */
 .fotoseccion{
   background: url(../Imagenes/LevantadoraDePesas1440x562.png) no-repeat;
   background-size: cover;
@@ -264,7 +262,7 @@ header {
   color: whitesmoke;
   margin-bottom: 35px;
 }
-/* fin seccion para vos */
+
 /* responsive para vos */
 @media(max-width:1334px){
   .contenedor-about{
@@ -279,6 +277,8 @@ header {
   }
 }
 /* fin responsive para vos */
+/* fin seccion para vos */
+
 
 /* Seccion circulos 2 */
 .contenedor3 {
@@ -366,41 +366,9 @@ header {
   height: 100%;
 }
 
-.contenedor4 {
-  width: 100%;
-  height: 432px;
-  background-image: url(./Imagenes/Belu-nacional\ santa\ fe-1641.JPG);
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: grid;
-}
-
-.div>.imagenFondo {
-  background-image: url(./Imagenes/Belu-nacional\ santa\ fe-1641.JPG);
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.caja2 {
-  width: 600px;
-  height: 500px;
-  background-color: rgba(255, 255, 255, 1);
-  position: absolute;
-  right: 650px;
-  top: 2250px;
-}
-
-.contenedor6 {
-  max-width: 1024px;
-  margin: 0 auto;
-}
 /* fin seccion circulos 2 */
-/* footer */
+
+/*inicio footer */
 .footer {
   background-color: black;
   padding: 80px 80px;
@@ -473,6 +441,8 @@ header {
   }
 }
 /* Fin de footer */
+/* fin del index */
+
 
 /* contacto */
 .galeria{

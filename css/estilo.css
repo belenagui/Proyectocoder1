@@ -1,17 +1,323 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @import "./components/footer";
- *   |         ^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\main.scss 5:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"./components/footer\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 5:9  root stylesheet";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+header {
+  background-color: rgb(14, 14, 14);
+  display: flex;
+  justify-content: space-between;
+  min-height: 93px;
+  width: 100%;
+  align-items: center;
+  padding: 0;
+}
+
+nav {
+  background: black;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+}
+
+.offcanvas {
+  background-color: black;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav > li:hover {
+    background-color: rgba(13, 138, 240, 0.722);
+  }
+}
+.fotoseccion {
+  background: url(../Imagenes/LevantadoraDePesas1440x562.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
+.fotoseccion .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 362px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 8px 12px black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contenedor .circle1 {
+  display: inline-block;
+  width: 225px;
+  height: 225px;
+  border-radius: 100%;
+  margin: 170px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  margin: 1fr;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contenedor .circle1 .imagen1 {
+  width: 100%;
+  height: 100%;
+}
+.contenedor .circle1 .p {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.contenedor .circle2 {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  width: 225px;
+  height: 225px;
+  border-radius: 100%;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.contenedor .circle2 .imagen2 {
+  width: 100%;
+  height: 100%;
+}
+.contenedor .circle3 {
+  margin-top: 10px;
+  font-size: 14px;
+  display: inline-block;
+  width: 225px;
+  height: 225px;
+  border-radius: 100%;
+  margin: 170px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.contenedor .circle3 .imagen3 {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-about {
+  padding: 0;
+  display: flex;
+  background-image: url(../Imagenes/training-828715.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  overflow: hidden;
+}
+.contenedor-about .about-txt {
+  width: 30%;
+  height: 100%;
+  background-image: url(../Imagenes/bg1.png);
+  box-sizing: border-box;
+  padding: 30px;
+  margin-left: 998px;
+  float: right;
+}
+.contenedor-about .about-txt p {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 35px;
+}
+.contenedor-about .about-txt .h2about {
+  font-size: 70px;
+  color: black;
+  margin-bottom: 15px;
+}
+@media (max-width: 1334px) {
+  .contenedor-about .contenedor-about {
+    padding: 0 30px 30px 30px;
+    flex-direction: column;
+  }
+  .contenedor-about .about-txt {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    order: 2;
+  }
+}
+
+.contenedor5 {
+  width: 100%;
+  height: 300px;
+  background-color: #16191E;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.contenedor5 button {
+  height: 30%;
+  padding: 15px 20px;
+  margin: 10px;
+  border: none;
+  background: #020d24;
+  color: whitesmoke;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 300ms;
+  text-transform: uppercase;
+  font-weight: 500px;
+}
+.contenedor5 button:hover {
+  background: #010309;
+}
+
+.contenedor-foryou {
+  padding: 0;
+  display: flex;
+  background-image: url(../Imagenes/prensa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  overflow: hidden;
+  border: #000;
+  box-shadow: #000;
+}
+.contenedor-foryou .foryou-txt {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-right: 1000px;
+  float: right;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+}
+.contenedor-foryou .foryou-txt p {
+  font-size: 16px;
+  color: whitesmoke;
+  margin-bottom: 35px;
+}
+.contenedor-foryou .h2foryou {
+  font-size: 70px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.contenedor3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 362px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 8px 12px black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  border-bottom: rgba(0, 195, 255, 0.7490196078);
+  border-style: groove;
+  border-width: 2px;
+}
+.contenedor3 .circle4 {
+  display: inline-block;
+  width: 225px;
+  height: 225px;
+  border-radius: 100%;
+  margin: 170px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  margin: 1fr;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contenedor3 .circle4 .imagen4 {
+  width: 100%;
+  height: 100%;
+}
+.contenedor3 .circle4 p {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.contenedor3 .circle5 {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  width: 225px;
+  height: 225px;
+  border-radius: 100%;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.contenedor3 .circle5 .imagen5 {
+  width: 100%;
+  height: 100%;
+}
+.contenedor3 .circle6 {
+  margin-top: 10px;
+  font-size: 14px;
+  display: inline-block;
+  width: 225px;
+  height: 225px;
+  border-radius: 100%;
+  margin: 170px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.contenedor3 .circle6 .imagen6 {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=estilo.css.map */
