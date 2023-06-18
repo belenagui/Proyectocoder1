@@ -387,13 +387,23 @@ nav {
   height: 100%;
 }
 
-.bannerBlog {
-  background: url(../Imagenes/ket) no-repeat;
+.bannerblog {
+  background: url(../Imagenes/ket.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 80px);
 }
-.bannerBlog .overlay {
+.bannerblog__contenedor {
+  width: 100%;
+  min-width: 320px;
+  margin: auto;
+  padding: 0px;
+  position: relative;
+  object-fit: cover;
+  background-size: cover;
+  height: 500px;
+}
+.bannerblog__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -402,4 +412,62 @@ nav {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
 }
 
-/*# sourceMappingURL=estilo.css.map */
+.blog__heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.blog__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(30rem, 1fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.blog__box {
+  box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+}
+.blog__image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.blog__image:hover {
+  transform: scale(1.1);
+}
+.blog__image .h3 {
+  font-size: 2rem;
+}
+.blog__image .h3 .i {
+  color: #bd18b4;
+}
+.blog__content h3 {
+  font-size: 2rem;
+}
+.blog__content p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  line-height: 2;
+  color: #777;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border: 0.1rem solid #bd18b4;
+  background: #ffeeff;
+  color: #bd18b4;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background: #bd18b4;
+  color: #ffeeff;
+}
+
+/*# sourceMappingURL=estilo.css~.map */
