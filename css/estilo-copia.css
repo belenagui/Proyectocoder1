@@ -1084,7 +1084,7 @@ ul {
 
 .blog{
   padding: 5rem 10%;
-  background-color: #342D21;
+  background-color: rgba(0, 0, 0, 0.933);
 }
 
 .blog .blog__heading{
